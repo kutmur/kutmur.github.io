@@ -1,61 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Halil İbrahim Kutmur</title>
-  <link href="css/style.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halil Ibrahim Kutmur - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.7;
+            color: #1a1a1a;
+            background-color: #ffffff;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+            color: #000000;
+        }
+
+        h2 {
+            font-size: 0.95rem;
+            font-weight: 400;
+            color: #666666;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        h3 {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #999999;
+            margin-top: 60px;
+            margin-bottom: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        .contact {
+            margin-bottom: 50px;
+        }
+
+        .contact a {
+            color: #1a1a1a;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+        }
+
+        .contact a:hover {
+            color: #0066cc;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        .experience-header {
+            margin-bottom: 8px;
+        }
+
+        .experience-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #000000;
+        }
+
+        .experience-company {
+            font-size: 1rem;
+            color: #666666;
+            margin-bottom: 4px;
+        }
+
+        .experience-date {
+            font-size: 0.9rem;
+            color: #999999;
+            margin-bottom: 16px;
+        }
+
+        ul {
+            list-style-position: inside;
+            margin-left: 0;
+        }
+
+        li {
+            font-size: 0.95rem;
+            color: #333333;
+            margin-bottom: 8px;
+            padding-left: 0;
+        }
+
+        .skills-list {
+            list-style: none;
+        }
+
+        .skills-list li {
+            margin-bottom: 6px;
+        }
+
+        .skill-category {
+            font-weight: 600;
+            color: #000000;
+        }
+
+        .education-item {
+            margin-bottom: 12px;
+        }
+
+        .degree {
+            font-size: 1rem;
+            color: #333333;
+        }
+
+        .institution {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 8px;
+        }
+
+        .languages-list {
+            list-style: none;
+        }
+
+        .languages-list li {
+            margin-bottom: 6px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 40px 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 0.9rem;
+            }
+
+            .contact a {
+                display: block;
+                margin-bottom: 10px;
+                margin-right: 0;
+            }
+        }
+    </style>
 </head>
-
 <body>
+    <header>
+        <h1>HALIL IBRAHIM KUTMUR</h1>
+        <h2>AI & Electrical Engineering Student | AI Product Tester @ DeepLearning.AI</h2>
+        <div class="contact">
+            <a href="mailto:halilkutmur@gmail.com">halilkutmur@gmail.com</a>
+            <a href="https://www.linkedin.com/in/kutmur/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/kutmur/" target="_blank">GitHub</a>
+        </div>
+    </header>
 
-  <!-- Hero Section -->
-  <h1>Halil İbrahim Kutmur</h1>
+    <section>
+        <h3>About</h3>
+        <p>An ambitious dual-degree candidate specializing in Artificial Intelligence & Electrical Engineering, dedicated to building and refining cutting-edge technology. My academic foundation is complemented by practical experience at DeepLearning.AI, where I analyze and enhance AI educational products for technical accuracy and user impact.</p>
+    </section>
 
-  <div class="nav">
-    <a href="index.html" class="active">Home</a>
-    <a href="aboutMe.html">About Me</a>
-    <a href="skills.html">Skills</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-  </div>
+    <section>
+        <h3>Technical Skills</h3>
+        <ul class="skills-list">
+            <li><span class="skill-category">Languages:</span> Python, C++, SQL, HTML, CSS</li>
+            <li><span class="skill-category">AI & Data Science:</span> Neural Networks, Deep Learning, NLP, LLMOps, Vector Databases, Data Analysis</li>
+            <li><span class="skill-category">Tools:</span> Git, Linux, MySQL</li>
+        </ul>
+    </section>
 
-  <p>
-    Software Engineer | Specializing in Autonomous Systems, AI, and Embedded Development.
-  </p>
+    <section>
+        <h3>Professional Experience</h3>
+        <div class="experience-header">
+            <div class="experience-title">AI Education Product Tester</div>
+            <div class="experience-company">DeepLearning.AI</div>
+            <div class="experience-date">Aug 2025 - Present | Remote (Palo Alto, CA)</div>
+        </div>
+        <ul>
+            <li>Evaluated AI learning products and provided structured feedback for usability and content accuracy.</li>
+            <li>Detected technical and user experience issues in course modules, contributing to quality improvement.</li>
+            <li>Collaborated cross-functionally with engineers and educators to enhance educational impact.</li>
+        </ul>
+    </section>
 
-  <!-- Sections -->
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    Software engineer experienced in real-time systems, autonomous flight control, and embedded development. Leading software for VTOL UAVs at BTU Alfa and passionate about building impactful technology at the intersection of AI and robotics.
-  </p>
-</section>
+    <section>
+        <h3>Education</h3>
+        <div class="institution">Bursa Technical University</div>
+        <div class="education-item">
+            <div class="degree">B.Sc., Artificial Intelligence and Machine Learning (2024-Present)</div>
+        </div>
+        <div class="education-item">
+            <div class="degree">B.Sc. in Electrical and Electronics Engineering (2025-Present)</div>
+        </div>
+    </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li><strong>Languages:</strong> C, C++, Python, Java</li>
-      <li><strong>AI/ML:</strong> Neural Networks, Computer Vision, Data Analysis</li>
-      <li><strong>Systems:</strong> PX4, ArduPilot, MAVLink, Linux</li>
-      <li><strong>Tools:</strong> Git, MATLAB, MySQL</li>
-    </ul>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <p>View my work on <a href="https://github.com/kutmur" target="_blank">GitHub</a>.</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:halilkutmur@gmail.com">halilkutmur@gmail.com</a></p>
-    <p>Location: Antalya, Turkey</p>
-    <p>
-      <a href="https://linkedin.com/in/kutmur" target="_blank">LinkedIn</a> |
-      <a href="https://github.com/kutmur" target="_blank">GitHub</a>
-    </p>
-  </section>
-
+    <section>
+        <h3>Languages</h3>
+        <ul class="languages-list">
+            <li>Turkish (Native)</li>
+            <li>English (Professional Proficiency)</li>
+        </ul>
+    </section>
 </body>
 </html>
